@@ -16111,7 +16111,7 @@ Various fiducial points for machine vision alignment.</description>
 <hole x="2.93" y="1.98" drill="2"/>
 </package>
 <package name="DF40C-70DP-0.4(51)">
-<circle x="7.3" y="1" radius="0.1" width="0.3048" layer="21"/>
+<circle x="7.7" y="1" radius="0.1" width="0.3048" layer="21"/>
 <wire x1="-8.4" y1="1.44" x2="8.4" y2="1.44" width="0.2032" layer="21"/>
 <wire x1="8.4" y1="1.44" x2="8.4" y2="-1.44" width="0.2032" layer="21"/>
 <wire x1="8.4" y1="-1.44" x2="-8.4" y2="-1.44" width="0.2032" layer="21"/>
@@ -16186,6 +16186,10 @@ Various fiducial points for machine vision alignment.</description>
 <smd name="68" x="-6.4" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
 <smd name="69" x="-6.8" y="1.32" dx="0.2" dy="1.14" layer="16"/>
 <smd name="70" x="-6.8" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC4" x="-7.2" y="1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC3" x="-7.2" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC1" x="7.2" y="1.32" dx="0.2" dy="1.14" layer="16"/>
+<smd name="NC2" x="7.2" y="-1.32" dx="0.2" dy="1.14" layer="16"/>
 </package>
 <package name="DF40-XC-(X.X)-70DS-0.4V(51)">
 <smd name="69" x="-6.8" y="1.32" dx="0.2" dy="1.14" layer="1"/>
@@ -19909,7 +19913,7 @@ See a 3.3V fixed output version of this chip in action on the &lt;a href="https:
 <part name="C7" library="SparkFun-Capacitors" deviceset="9.0PF-50V-10%(0603)" device="" value="9.0pF"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="4.7UF-6.3V-10%(0603)" device="0603" value="4.7uF"/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device=""/>
+<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="" value="1.0uH"/>
 <part name="FID1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCHANNEL" device="BSS138" value="BSS138"/>
@@ -19996,8 +20000,8 @@ Prevents Battery board from enabling DCIN</text>
 <instance part="GND16" gate="1" x="20.32" y="50.8"/>
 <instance part="D4" gate="G$1" x="27.94" y="78.74" rot="R90"/>
 <instance part="SUPPLY3" gate="G$1" x="27.94" y="86.36"/>
-<instance part="C8" gate="G$1" x="38.1" y="66.04"/>
-<instance part="GND17" gate="1" x="38.1" y="50.8"/>
+<instance part="C8" gate="G$1" x="40.64" y="66.04"/>
+<instance part="GND17" gate="1" x="40.64" y="50.8"/>
 <instance part="U$1" gate="G$1" x="81.28" y="68.58" rot="MR0"/>
 <instance part="GND18" gate="1" x="60.96" y="50.8"/>
 <instance part="SUPPLY8" gate="G$1" x="88.9" y="86.36"/>
@@ -20098,7 +20102,7 @@ Prevents Battery board from enabling DCIN</text>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="38.1" y1="53.34" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="53.34" x2="40.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -20328,6 +20332,7 @@ Prevents Battery board from enabling DCIN</text>
 <junction x="200.66" y="86.36"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="200.66" y1="83.82" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
+<junction x="218.44" y="86.36"/>
 </segment>
 <segment>
 <wire x1="208.28" y1="157.48" x2="208.28" y2="160.02" width="0.1524" layer="91"/>
@@ -20428,13 +20433,13 @@ Prevents Battery board from enabling DCIN</text>
 <wire x1="17.78" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="73.66" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="27.94" y1="73.66" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 <junction x="27.94" y="73.66"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="71.12" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="71.12" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VOUT"/>
-<wire x1="38.1" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
-<junction x="38.1" y="73.66"/>
+<wire x1="40.64" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
+<junction x="40.64" y="73.66"/>
 <label x="45.72" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
