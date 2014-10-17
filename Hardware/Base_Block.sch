@@ -138,7 +138,7 @@
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
-<schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<schematic xreflabel="%F%N/%S" xrefpart="/%S.%C%R">
 <libraries>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
@@ -20133,7 +20133,7 @@ Prevents Battery board from enabling DCIN</text>
 <instance part="LOGO1" gate="G$1" x="88.9" y="2.54"/>
 <instance part="JP1" gate="G$1" x="15.24" y="132.08" rot="MR0"/>
 <instance part="GND1" gate="1" x="25.4" y="116.84" rot="MR0"/>
-<instance part="GND5" gate="1" x="5.08" y="132.08" rot="MR90"/>
+<instance part="GND5" gate="1" x="5.08" y="127" rot="MR0"/>
 <instance part="U2" gate="G$1" x="71.12" y="129.54"/>
 <instance part="C1" gate="G$1" x="66.04" y="165.1" rot="R180"/>
 <instance part="C2" gate="G$1" x="76.2" y="165.1" rot="R180"/>
@@ -20239,6 +20239,8 @@ Prevents Battery board from enabling DCIN</text>
 <segment>
 <pinref part="JP1" gate="G$1" pin="SHIELD"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="5.08" y1="129.54" x2="5.08" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="132.08" x2="7.62" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
